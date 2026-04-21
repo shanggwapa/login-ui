@@ -18,7 +18,6 @@ export default function Home() {
       }}
     >
       
-      {/* --- SECTION 1: LOGIN/CREATE (Upper Part) --- */}
       <div className="w-full max-w-6xl pt-10 pb-20 px-4 flex flex-col items-center">
         {/* HEADER SECTION */}
         <div className="text-center mb-10 w-full flex flex-col items-center relative">
@@ -34,9 +33,8 @@ export default function Home() {
           </button>
         </div>
 
-        {/* MAIN CONTAINER */}
         <div className="w-full flex flex-col md:flex-row bg-transparent">
-          {/* LEFT SIDE: SIGN IN */}
+
           <div className="flex-1 p-8 md:p-16 flex flex-col items-start">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 tracking-tight uppercase">
               Sign in to your<br />existing account
@@ -53,7 +51,7 @@ export default function Home() {
             <button className="mt-10 text-white text-sm font-bold flex items-center"><span className="mr-2">⟨</span> RETURN TO STORE</button>
           </div>
 
-          {/* RIGHT SIDE: CREATE ACCOUNT */}
+
           <div className="flex-1 p-8 md:p-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 tracking-tight uppercase">Create Account</h2>
             <div className="bg-white p-5 mb-8 flex items-start shadow-xl">
@@ -133,11 +131,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom Socials Bar */}
-{/* --- UPDATED SOCIAL ICONS BAR --- */}
 <div className="max-w-[1400px] mx-auto mt-20 pt-10 flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
   
-  {/* Social Icons Grid: 5 columns on top, remaining on bottom */}
+
   <div className="grid grid-cols-5 gap-x-8 gap-y-6 text-[#69B8D0] text-4xl">
     <FaFacebookF className="cursor-pointer hover:opacity-80" />
     <FaTwitter className="cursor-pointer hover:opacity-80" />
@@ -148,7 +144,6 @@ export default function Home() {
     <SiTiktok className="cursor-pointer hover:opacity-80" />
   </div>
 
-  {/* Text Content Right */}
   <div className="flex flex-col items-center md:items-end text-center md:text-right max-w-2xl">
     <p className="text-[18px] text-[#69B8D0] uppercase leading-relaxed">
       IF YOU ARE USING A SCREEN READER AND ARE HAVING PROBLEMS USING THIS WEBSITE, 
@@ -159,7 +154,6 @@ export default function Home() {
 </div>
       </footer>
 
-      {/* Help Bubble */}
       <button className="fixed bottom-6 left-6 bg-[#2B6A94] text-white px-5 py-2 rounded-full flex items-center font-bold shadow-lg hover:bg-[#235678] transition">
         <span className="mr-2 text-lg">?</span> Help
       </button>
