@@ -6,21 +6,19 @@ import {
   FaApple, 
   FaSpotify 
 } from "react-icons/fa";
-
 import { SiTiktok } from "react-icons/si";
+
 export default function Home() {
   return (
     <div 
       className="min-h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center font-sans selection:bg-white/30"
       style={{ 
         backgroundImage: `url('https://shop.beabadoobee.com/cdn/shop/files/BEA-000001-Store-LaunchMobile.png?v=1748979411&width=850')`,
-        backgroundColor: '#69B8D0'
+        backgroundColor: '#b8d6ee'
       }}
     >
-      
-      {/* --- SECTION 1: LOGIN/CREATE (Upper Part) --- */}
+
       <div className="w-full max-w-6xl pt-10 pb-20 px-4 flex flex-col items-center">
-        {/* HEADER SECTION */}
         <div className="text-center mb-10 w-full flex flex-col items-center relative">
           <div className="absolute right-0 top-0 hidden md:flex space-x-4 text-white text-xl">
             <span>🔍</span> <span>👤</span> <span>🛒</span>
@@ -34,9 +32,8 @@ export default function Home() {
           </button>
         </div>
 
-        {/* MAIN CONTAINER */}
         <div className="w-full flex flex-col md:flex-row bg-transparent">
-          {/* LEFT SIDE: SIGN IN */}
+
           <div className="flex-1 p-8 md:p-16 flex flex-col items-start">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 tracking-tight uppercase">
               Sign in to your<br />existing account
@@ -53,7 +50,7 @@ export default function Home() {
             <button className="mt-10 text-white text-sm font-bold flex items-center"><span className="mr-2">⟨</span> RETURN TO STORE</button>
           </div>
 
-          {/* RIGHT SIDE: CREATE ACCOUNT */}
+
           <div className="flex-1 p-8 md:p-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 tracking-tight uppercase">Create Account</h2>
             <div className="bg-white p-5 mb-8 flex items-start shadow-xl">
@@ -84,29 +81,30 @@ export default function Home() {
       <footer className="w-full bg-[#8B1E1E] text-white py-16 px-6 md:px-12 mt-auto">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           
-
           <div className="flex justify-center md:justify-start">
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Light_blue_star.svg/3840px-Light_blue_star.svg.png" 
               alt="star" 
-              className="w-37 h-37" 
+              className="w-32 h-32" 
             />
           </div>
 
-          <div className="flex flex-col space-y-3 text-[18px] text-[#69B8D0] font-bold tracking-widest uppercase">
-            <a href="#" className="hover:opacity-70">MERCH</a>
-            <a href="#" className="hover:opacity-70">HELP & SUPPORT</a>
-            <a href="#" className="hover:opacity-70">TERMS</a>
-            <a href="#" className="hover:opacity-70">PRIVACY</a>
-            <a href="#" className="hover:opacity-70">DO NOT SELL MY PERSONAL INFORMATION</a>
-            <a href="#" className="hover:opacity-70">COOKIE CHOICES</a>
+
+          <div className="flex flex-row gap-24 md:col-span-2">
+              <div className="text-[16px] text-[#b8d6ee] font-bold tracking-widest uppercase">
+                 <a href="#" className="hover:opacity-70">MERCH</a>
+              </div>
+              <div className="flex flex-col space-y-3 text-[16px] text-[#b8d6ee] font-bold tracking-widest uppercase">
+                <a href="#" className="hover:opacity-70">HELP & SUPPORT</a>
+                <a href="#" className="hover:opacity-70">TERMS</a>
+                <a href="#" className="hover:opacity-70">PRIVACY</a>
+                <a href="#" className="hover:opacity-70">DO NOT SELL MY PERSONAL INFORMATION</a>
+                <a href="#" className="hover:opacity-70">COOKIE CHOICES</a>
+              </div>
           </div>
 
-          <div className="hidden md:block"></div>
-
-
           <div className="flex flex-col space-y-4">
-            <h3 className="text-xl text-[#69B8D0] font-black leading-tight uppercase tracking-tighter">
+            <h3 className="text-xl text-[#b8d6ee] font-black leading-tight uppercase tracking-tighter">
               SIGN UP FOR UPDATES FROM BEABADOOBEE
             </h3>
             <input 
@@ -114,52 +112,50 @@ export default function Home() {
               placeholder="enter your email" 
               className="w-full p-3 bg-white text-black font-bold outline-none"
             />
-            <select className="w-full p-3 bg-white text-black font-bold outline-none appearance-none">
-              <option>United States</option>
-            </select>
-            <div className="flex items-start space-x-3 text-[10px] text-[#69B8D0]">
-              <input type="checkbox" className="mt-1 w-4 h-4 accent-[#69B8D0]" />
-              <label>
+            <div className="relative">
+              <select className="w-full p-3 bg-white text-black font-bold outline-none appearance-none">
+                <option>United States</option>
+              </select>
+              <span className="absolute right-4 top-3 text-black">▼</span>
+            </div>
+            
+            <div className="flex items-start space-x-3 text-[10px] text-[#b8d6ee]">
+              <input type="checkbox" className="mt-1 w-4 h-4 accent-[#b8d6ee]" />
+              <label className="font-bold">
                 Sign up to receive email updates and offers from:<br/>
-                <span className="text-[#69B8D0] font-bold">beabadoobee</span>
+                <span className="text-[#b8d6ee] font-black">beabadoobee</span>
               </label>
             </div>
-            <button className="w-full bg-[#69B8D0] text white py-3  text-lg shadow-md hover:bg-white transition">
+            <button className="w-full bg-[#b8d6ee] text-white py-3 font-bold text-lg shadow-md hover:bg-white hover:text-[#b8d6ee] transition">
               SIGN UP NOW
             </button>
-            <p className="text-[9px] text-[#69B8D0] leading-tight">
+            <p className="text-[9px] text-[#b8d6ee] leading-tight font-medium">
               emails will be sent by or on behalf of umg recordings services, inc. 2220 colorado avenue, santa monica, ca 90404 (310) 865-4000. You may withdraw your consent at any time. See privacy policy at http://privacy.umusic.com.
             </p>
           </div>
         </div>
 
-        {/* Bottom Socials Bar */}
-{/* --- UPDATED SOCIAL ICONS BAR --- */}
-<div className="max-w-[1400px] mx-auto mt-20 pt-10 flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
-  
-  {/* Social Icons Grid: 5 columns on top, remaining on bottom */}
-  <div className="grid grid-cols-5 gap-x-8 gap-y-6 text-[#69B8D0] text-4xl">
-    <FaFacebookF className="cursor-pointer hover:opacity-80" />
-    <FaTwitter className="cursor-pointer hover:opacity-80" />
-    <FaInstagram className="cursor-pointer hover:opacity-80" />
-    <FaYoutube className="cursor-pointer hover:opacity-80" />
-    <FaApple className="cursor-pointer hover:opacity-80" />
-    <FaSpotify className="cursor-pointer hover:opacity-80" />
-    <SiTiktok className="cursor-pointer hover:opacity-80" />
-  </div>
+        <div className="max-w-[1400px] mx-auto mt-20 pt-10 flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0 border-t border-white/1">
+          <div className="grid grid-cols-5 gap-x-8 gap-y-6 text-[#b8d6ee] text-2xl md:text-4xl">
+            <FaFacebookF className="cursor-pointer hover:opacity-80" />
+            <FaTwitter className="cursor-pointer hover:opacity-80" />
+            <FaInstagram className="cursor-pointer hover:opacity-80" />
+            <FaYoutube className="cursor-pointer hover:opacity-80" />
+            <FaApple className="cursor-pointer hover:opacity-80" />
+            <FaSpotify className="cursor-pointer hover:opacity-80" />
+            <SiTiktok className="cursor-pointer hover:opacity-80" />
+          </div>
 
-  {/* Text Content Right */}
-  <div className="flex flex-col items-center md:items-end text-center md:text-right max-w-2xl">
-    <p className="text-[18px] text-[#69B8D0] uppercase leading-relaxed">
-      IF YOU ARE USING A SCREEN READER AND ARE HAVING PROBLEMS USING THIS WEBSITE, 
-      PLEASE CALL 866-682-4413 FOR ASSISTANCE.
-    </p>
-    <p className="text-[18px] font-bold mt-2 text-[#69B8D0]">© 2026 BEABADOOBEE OFFICIAL STORE</p>
-  </div>
-</div>
+          <div className="flex flex-col items-center md:items-end text-center md:text-right max-w-2xl">
+            <p className="text-[14px] md:text-[16px] text-[#b8d6ee] uppercase leading-tight font-bold">
+              IF YOU ARE USING A SCREEN READER AND ARE HAVING PROBLEMS USING THIS WEBSITE, 
+              PLEASE CALL 866-682-4413 FOR ASSISTANCE.
+            </p>
+            <p className="text-[14px] md:text-[16px] font-bold mt-2 text-[#b8d6ee]">© 2026 BEABADOOBEE OFFICIAL STORE</p>
+          </div>
+        </div>
       </footer>
 
-      {/* Help Bubble */}
       <button className="fixed bottom-6 left-6 bg-[#2B6A94] text-white px-5 py-2 rounded-full flex items-center font-bold shadow-lg hover:bg-[#235678] transition">
         <span className="mr-2 text-lg">?</span> Help
       </button>
